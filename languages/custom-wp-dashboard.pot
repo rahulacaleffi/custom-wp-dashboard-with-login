@@ -1,0 +1,32 @@
+# Custom WP Dashboard With Login Page
+# Copyright (C) 2025 Rahula Palu
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom WP Dashboard With Login Page 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/rahulacaleffi/custom-wp-dashboard-w-login/issues\n"
+"POT-Creation-Date: 2025-01-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+
+#. Plugin Name of the plugin
+msgid "Custom WP Dashboard With Login Page"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/rahulacaleffi/custom-wp-dashboard-w-login"
+msgstr ""
+
+#. Description of the plugin
+msgid "Customize your WordPress dashboard and login page with your own branding, logo, and styling."
+msgstr ""
+
+#. Author of the plugin
+msgid "Rahula Palu"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/rahulacaleffi"
+msgstr ""

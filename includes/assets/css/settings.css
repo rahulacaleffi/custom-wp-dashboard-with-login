@@ -1,0 +1,88 @@
+/**
+ * Custom Dashboard Settings Page Styles
+ */
+
+/* Settings Page Container */
+.custom-dashboard-settings {
+  max-width: 960px;
+  margin: 20px 0;
+}
+
+.custom-dashboard-settings h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+/* Form Groups */
+.custom-dashboard-settings .form-table {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.custom-dashboard-settings .form-table th {
+  padding: 20px;
+  width: 200px;
+}
+
+.custom-dashboard-settings .form-table td {
+  padding: 20px;
+}
+
+/* Image Upload Fields */
+.custom-dashboard-logo-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.custom-dashboard-logo-upload .regular-text {
+  width: 100%;
+  max-width: 400px;
+}
+
+.custom-dashboard-logo-upload button {
+  width: fit-content;
+}
+
+.custom-dashboard-image-preview {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Color Picker */
+.custom-dashboard-settings .wp-picker-container {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Description Text */
+.custom-dashboard-settings .description {
+  color: #666;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.custom-dashboard-settings p.submit {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.custom-dashboard-settings .submit .button-primary {
+  padding: 5px 20px;
+  height: auto;
+  line-height: 2;
+}
+
+/* Section Description */
+.custom-dashboard-settings .section-description {
+  margin-bottom: 20px;
+  color: #666;
+}

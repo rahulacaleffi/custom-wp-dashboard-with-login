@@ -1,0 +1,83 @@
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-LightOblique.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-RegularOblique.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-MediumOblique.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-BoldOblique.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-ExtraBoldOblique.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-Heavy.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GreycliffCF;
+  src: url("../assets/fonts/Greycliff/GreycliffCF-HeavyOblique.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}

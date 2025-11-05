@@ -1,0 +1,220 @@
+/* Custom login page styles */
+@import url("./fonts.css");
+
+/* Font face defined */
+body.login {
+  font-family: "GreycliffCF", sans-serif;
+}
+
+body.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body.login .language-switcher {
+  display: none;
+}
+.login {
+  background: #cea176 url(../assets/images/worldmap.svg);
+  background-size: 80vw 70vh;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 72.5em) {
+  .login {
+    background-size: 1000px;
+    background-position: center center;
+  }
+}
+.login .button.wp-hide-pw {
+  margin-top: 10px;
+}
+.login #login {
+  padding: 50px 30px 30px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+}
+
+.login h1 a {
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 35px;
+}
+
+.login #loginform,
+.login #lostpasswordform,
+.login #registerform {
+  border: 0;
+  padding: 0;
+  box-shadow: unset;
+}
+.login label {
+  font-weight: 900;
+  font-size: 16px;
+}
+.login form .input,
+.login input[type="text"] {
+  min-height: 45px;
+  background: #fff;
+  border: 2px solid #bbbbbb;
+  border-radius: 15px;
+  color: #2e2e2e;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px #00000015;
+  transition: 300ms all cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.login input:focus {
+  box-shadow: 0px 0px 10px 0px #00000026 !important;
+  border: 2.5px solid #cea176;
+}
+
+/* REMEMBER ME CHECK */
+.login form .forgetmenot {
+  margin-top: 25px;
+}
+
+/* SHOW PASSWORD BUTTON */
+.login.wp-core-ui .button.wp-hide-pw,
+.login.wp-core-ui .button-secondary.wp-hide-pw {
+  color: rgb(201, 3, 3);
+  border: unset;
+  margin-top: 0;
+}
+
+/* Existing styles for the login button */
+.login p.submit {
+  position: relative;
+}
+.login p.submit input[type="submit"] {
+  background-image: linear-gradient(to right, #cea176 50%, #00a478 50%);
+  background-size: 200% 100%;
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  padding: 10px 45px 10px 25px;
+  border: 0;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 300ms all cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.login p.submit:before {
+  content: "→";
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 18px;
+  color: white;
+  z-index: 1000;
+}
+
+.login p.submit input[type="submit"]:hover {
+  background-position: -100% 0;
+}
+
+/* NAVIGATION - Forgot password */
+#login #nav {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px auto;
+  text-align: center;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+}
+#login #nav a {
+  color: white;
+}
+
+/* BACK TO SITE - hidden */
+#login #backtoblog {
+  display: none;
+}
+
+@media only screen and (min-width: 40em) {
+  .login #login {
+    min-width: 320px;
+    padding: 50px 50px 30px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  #login form p.submit {
+    float: unset;
+    margin: 20px auto 0;
+    width: fit-content;
+  }
+  #login form p.forgetmenot {
+    margin: 0 auto;
+    width: fit-content;
+    float: unset;
+  }
+}
+
+/**
+* Create pseudo elements for the login page
+*/
+.login::before {
+  content: " ";
+  /* background: url(../assets/images/arts/art2.svg); */
+  position: absolute;
+  top: 120px;
+  left: calc(10% - 130px);
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.login::after {
+  content: " ";
+  /* background: url(../assets/images/arts/art1.svg); */
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  width: 180px;
+  height: 180px;
+  aspect-ratio: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+html::before {
+  content: " ";
+  /* background: url(../assets/images/arts/art4.svg); */
+  position: absolute;
+  bottom: 0px;
+  left: calc(15% - 200px);
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+html::after {
+  content: " ";
+  /* background: url(../assets/images/arts/art3.svg); */
+  position: absolute;
+  top: -20px;
+  right: calc(15% - 200px);
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/** Hide Extra Options - Auth0 */
+body.login div#extra-options {
+  display: none;
+}
