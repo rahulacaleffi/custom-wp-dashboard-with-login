@@ -140,7 +140,7 @@ class Custom_Dashboard_Template
         $website_url = !empty($options['website_url']) ? $options['website_url'] : get_site_url();
         $enable_support = isset($options['enable_support_link']) ? $options['enable_support_link'] : false;
         $support_url = !empty($options['support_link_url']) ? $options['support_link_url'] : '';
-        $support_text = !empty($options['support_link_text']) ? $options['support_link_text'] : __('Support', 'custom-wp-dashboard-w-login');
+        $support_text = !empty($options['support_link_text']) ? $options['support_link_text'] : __('Support', 'custom-wp-dashboard-with-login');
         $copyright_text = !empty($options['copyright_text']) ? $options['copyright_text'] : '';
 
         wp_localize_script('custom-admin-script', 'customDashboardSettings', array(
@@ -169,7 +169,7 @@ class Custom_Dashboard_Template
 
         echo '<script>
         document.addEventListener("DOMContentLoaded", function() {
-            var firstItemComponent = \'<div class="custom-first-item-dashboard"><a href="' . esc_url($website_url) . '"><img class="custom-logo-dashboard" src="' . esc_url($logo_url) . '" alt="' . esc_attr__('Logo', 'custom-wp-dashboard-w-login') . '"> <span>' . esc_html__('View website', 'custom-wp-dashboard-w-login') . '</span> <img src="' . esc_url($follow_icon) . '" style="width:16px;height:16px" alt="' . esc_attr__('Follow', 'custom-wp-dashboard-w-login') . '"></a></div>\';
+            var firstItemComponent = \'<div class="custom-first-item-dashboard"><a href="' . esc_url($website_url) . '"><img class="custom-logo-dashboard" src="' . esc_url($logo_url) . '" alt="' . esc_attr__('Logo', 'custom-wp-dashboard-with-login') . '"> <span>' . esc_html__('View website', 'custom-wp-dashboard-with-login') . '</span> <img src="' . esc_url($follow_icon) . '" style="width:16px;height:16px" alt="' . esc_attr__('Follow', 'custom-wp-dashboard-with-login') . '"></a></div>\';
             
             var firstMenuItem = document.querySelector("ul#adminmenu > li.wp-first-item");
             if (firstMenuItem) {
