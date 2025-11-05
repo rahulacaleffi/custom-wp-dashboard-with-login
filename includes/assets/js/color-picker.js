@@ -4,7 +4,7 @@
  * Initializes the WordPress color picker for custom dashboard settings.
  * This script is loaded only on the plugin's settings page.
  *
- * @package Custom_WP_Dashboard
+ * @package Simple_Dashboard_Login_Customizer
  * @since   1.0.0
  */
 (function ($) {

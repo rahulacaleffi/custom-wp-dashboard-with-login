@@ -1,22 +1,22 @@
 <?php
 
 /**
- * Custom WP Dashboard With Login
+ * Simple Dashboard & Login Customizer by RahulaPalu
  *
- * @package           Custom_WP_Dashboard
+ * @package           Simple_Dashboard_Login_Customizer
  * @author            Rahula Palu
  * @copyright         2025 Rahula Palu
  * @license           GPL-2.0-or-later
  *
- * Plugin Name:       Custom WP Dashboard With Login
- * Plugin URI:        https://github.com/rahulacaleffi/custom-wp-dashboard-with-login
- * Description:       Customize your WordPress dashboard and login page with your own branding, logo, and styling.
+ * Plugin Name:       Simple Dashboard & Login Customizer by RahulaPalu
+ * Plugin URI:        https://github.com/rahulacaleffi/simple-dashboard-login-customizer-by-rahulapalu-by-rahulapalu
+ * Description:       Customize your WordPress dashboard and login page easily by adding your own branding, logo, and styling, without any hassle. Keep it simple!
  * Version:           1.0.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Rahula Palu
  * Author URI:        https://github.com/rahulacaleffi
- * Text Domain:       custom-wp-dashboard-with-login
+ * Text Domain:       simple-dashboard-login-customizer
  * Domain Path:       /languages
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -35,7 +35,7 @@ define('CUSTOM_DASHBOARD_PLUGIN_URL', plugin_dir_url(__FILE__));
 /**
  * Main plugin class
  */
-class Custom_Dashboard_Plugin
+class Simple_Dashboard_Plugin
 {
     /**
      * Sets up the plugin
@@ -61,9 +61,9 @@ class Custom_Dashboard_Plugin
         $this->load_dependencies();
 
         // Instantiate classes
-        new Custom_Dashboard_Settings();
-        new Custom_Dashboard_Template();
-        new Custom_Dashboard_Login();
+        new Simple_Dashboard_Settings();
+        new Simple_Dashboard_Template();
+        new Simple_Dashboard_Login();
     }
 
     /**
@@ -102,8 +102,8 @@ class Custom_Dashboard_Plugin
         if (version_compare(get_bloginfo('version'), '6.0', '<')) {
             deactivate_plugins(plugin_basename(__FILE__));
             wp_die(
-                esc_html__('This plugin requires WordPress 6.0 or higher.', 'custom-wp-dashboard-with-login'),
-                esc_html__('Plugin Activation Error', 'custom-wp-dashboard-with-login'),
+                esc_html__('This plugin requires WordPress 6.0 or higher.', 'simple-dashboard-login-customizer'),
+                esc_html__('Plugin Activation Error', 'simple-dashboard-login-customizer'),
                 array('back_link' => true)
             );
         }
@@ -112,8 +112,8 @@ class Custom_Dashboard_Plugin
         if (version_compare(PHP_VERSION, '7.4', '<')) {
             deactivate_plugins(plugin_basename(__FILE__));
             wp_die(
-                esc_html__('This plugin requires PHP 7.4 or higher.', 'custom-wp-dashboard-with-login'),
-                esc_html__('Plugin Activation Error', 'custom-wp-dashboard-with-login'),
+                esc_html__('This plugin requires PHP 7.4 or higher.', 'simple-dashboard-login-customizer'),
+                esc_html__('Plugin Activation Error', 'simple-dashboard-login-customizer'),
                 array('back_link' => true)
             );
         }
@@ -125,19 +125,19 @@ class Custom_Dashboard_Plugin
             'website_url' => get_site_url(),
             'enable_support_link' => false,
             'support_link_url' => '',
-            'support_link_text' => __('Support', 'custom-wp-dashboard-with-login'),
+            'support_link_text' => __('Support', 'simple-dashboard-login-customizer'),
             'copyright_text' => '',
             'primary_color' => '#c60b30',
             'secondary_color' => '#00a478'
         );
 
         // Only add defaults if options don't exist
-        if (false === get_option('custom_dashboard_options')) {
-            add_option('custom_dashboard_options', $default_options);
+        if (false === get_option('simple_dashboard_option')) {
+            add_option('simple_dashboard_option', $default_options);
         }
 
         // Set plugin version
-        update_option('custom_dashboard_version', CUSTOM_DASHBOARD_VERSION);
+        update_option('simple_dashboard_version', CUSTOM_DASHBOARD_VERSION);
 
         // Clear any cached data
         wp_cache_flush();
@@ -167,7 +167,7 @@ class Custom_Dashboard_Plugin
         $settings_link = sprintf(
             '<a href="%s">%s</a>',
             esc_url(admin_url('admin.php?page=custom-dashboard-settings')),
-            esc_html__('Settings', 'custom-wp-dashboard-with-login')
+            esc_html__('Settings', 'simple-dashboard-login-customizer')
         );
 
         array_unshift($links, $settings_link);
@@ -179,12 +179,12 @@ class Custom_Dashboard_Plugin
 /**
  * Plugin activation hook
  */
-register_activation_hook(__FILE__, array('Custom_Dashboard_Plugin', 'activate'));
+register_activation_hook(__FILE__, array('Simple_Dashboard_Plugin', 'activate'));
 
 /**
  * Plugin deactivation hook
  */
-register_deactivation_hook(__FILE__, array('Custom_Dashboard_Plugin', 'deactivate'));
+register_deactivation_hook(__FILE__, array('Simple_Dashboard_Plugin', 'deactivate'));
 
 // Initialize the plugin
-new Custom_Dashboard_Plugin();
+new Simple_Dashboard_Plugin();
