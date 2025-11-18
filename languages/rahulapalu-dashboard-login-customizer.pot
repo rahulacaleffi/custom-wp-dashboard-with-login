@@ -1,10 +1,10 @@
-# Simple Dashboard & Login Customizer by RahulaPalu
+# RahulaPalu Dashboard & Login Customizer
 # Copyright (C) 2025 Rahula Palu
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Simple Dashboard & Login Customizer by RahulaPalu 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/rahulacaleffi/simple-dashboard-login-customizer-by-rahulapalu/issues\n"
+"Project-Id-Version: RahulaPalu Dashboard & Login Customizer 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/rahulacaleffi/rahulapalu-dashboard-login-customizer/issues\n"
 "POT-Creation-Date: 2025-01-01 00:00:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12,11 +12,11 @@ msgstr ""
 "Language-Team: \n"
 
 #. Plugin Name of the plugin
-msgid "Simple Dashboard & Login Customizer by RahulaPalu"
+msgid "RahulaPalu Dashboard & Login Customizer"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://github.com/rahulacaleffi/simple-dashboard-login-customizer-by-rahulapalu"
+msgid "https://github.com/rahulacaleffi/rahulapalu-dashboard-login-customizer"
 msgstr ""
 
 #. Description of the plugin

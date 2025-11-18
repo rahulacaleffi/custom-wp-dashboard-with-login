@@ -32,7 +32,7 @@ class Simple_Dashboard_Template
      */
     public function enqueue_custom_admin_styles()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $is_debug_enabled = isset($options['enable_debug_mode']) ? $options['enable_debug_mode'] : false;
 
         // Get color settings with defaults
@@ -140,7 +140,7 @@ class Simple_Dashboard_Template
         $website_url = !empty($options['website_url']) ? $options['website_url'] : get_site_url();
         $enable_support = isset($options['enable_support_link']) ? $options['enable_support_link'] : false;
         $support_url = !empty($options['support_link_url']) ? $options['support_link_url'] : '';
-        $support_text = !empty($options['support_link_text']) ? $options['support_link_text'] : __('Support', 'simple-dashboard-login-customizer');
+        $support_text = !empty($options['support_link_text']) ? $options['support_link_text'] : __('Support', 'rahulapalu-dashboard-login-customizer');
         $copyright_text = !empty($options['copyright_text']) ? $options['copyright_text'] : '';
 
         wp_localize_script('custom-admin-script', 'customDashboardSettings', array(
@@ -162,14 +162,14 @@ class Simple_Dashboard_Template
      */
     public function custom_dynamic_javascript_dashboard()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $logo_url = !empty($options['logo_url']) ? $options['logo_url'] : esc_url(plugin_dir_url(__FILE__) . 'assets/images/wordpress-color.svg');
         $website_url = !empty($options['website_url']) ? $options['website_url'] : get_site_url();
         $follow_icon = plugin_dir_url(__FILE__) . 'assets/images/follow.svg';
 
         echo '<script>
         document.addEventListener("DOMContentLoaded", function() {
-            var firstItemComponent = \'<div class="custom-first-item-dashboard"><a href="' . esc_url($website_url) . '"><img class="custom-logo-dashboard" src="' . esc_url($logo_url) . '" alt="' . esc_attr__('Logo', 'simple-dashboard-login-customizer') . '"> <span>' . esc_html__('View website', 'simple-dashboard-login-customizer') . '</span> <img src="' . esc_url($follow_icon) . '" style="width:16px;height:16px" alt="' . esc_attr__('Follow', 'simple-dashboard-login-customizer') . '"></a></div>\';
+            var firstItemComponent = \'<div class="custom-first-item-dashboard"><a href="' . esc_url($website_url) . '"><img class="custom-logo-dashboard" src="' . esc_url($logo_url) . '" alt="' . esc_attr__('Logo', 'rahulapalu-dashboard-login-customizer') . '"> <span>' . esc_html__('View website', 'rahulapalu-dashboard-login-customizer') . '</span> <img src="' . esc_url($follow_icon) . '" style="width:16px;height:16px" alt="' . esc_attr__('Follow', 'rahulapalu-dashboard-login-customizer') . '"></a></div>\';
             
             var firstMenuItem = document.querySelector("ul#adminmenu > li.wp-first-item");
             if (firstMenuItem) {
@@ -187,7 +187,7 @@ class Simple_Dashboard_Template
      */
     public function dashboard_logo()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $logo_url = !empty($options['logo_url']) ? $options['logo_url'] : plugin_dir_url(__FILE__) . 'assets/images/wordpress-color.svg';
 
         echo '<style type="text/css">

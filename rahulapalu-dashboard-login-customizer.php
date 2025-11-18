@@ -1,22 +1,22 @@
 <?php
 
 /**
- * Simple Dashboard & Login Customizer by RahulaPalu
+ * RahulaPalu Dashboard & Login Customizer
  *
- * @package           Simple_Dashboard_Login_Customizer
+ * @package           rahulapalu_dashboard_login_customizer
  * @author            Rahula Palu
  * @copyright         2025 Rahula Palu
  * @license           GPL-2.0-or-later
  *
- * Plugin Name:       Simple Dashboard & Login Customizer by RahulaPalu
- * Plugin URI:        https://github.com/rahulacaleffi/simple-dashboard-login-customizer-by-rahulapalu-by-rahulapalu
- * Description:       Customize your WordPress dashboard and login page easily by adding your own branding, logo, and styling, without any hassle. Keep it simple!
+ * Plugin Name:       RahulaPalu Dashboard & Login Customizer
+ * Plugin URI:        https://github.com/rahulacaleffi/rahulapalu-dashboard-login-customizer
+ * Description:       Customize and brand your dashboard and login page quickly and simply.
  * Version:           1.0.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Rahula Palu
  * Author URI:        https://github.com/rahulacaleffi
- * Text Domain:       simple-dashboard-login-customizer
+ * Text Domain:       rahulapalu-dashboard-login-customizer
  * Domain Path:       /languages
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -102,8 +102,8 @@ class Simple_Dashboard_Plugin
         if (version_compare(get_bloginfo('version'), '6.0', '<')) {
             deactivate_plugins(plugin_basename(__FILE__));
             wp_die(
-                esc_html__('This plugin requires WordPress 6.0 or higher.', 'simple-dashboard-login-customizer'),
-                esc_html__('Plugin Activation Error', 'simple-dashboard-login-customizer'),
+                esc_html__('This plugin requires WordPress 6.0 or higher.', 'rahulapalu-dashboard-login-customizer'),
+                esc_html__('Plugin Activation Error', 'rahulapalu-dashboard-login-customizer'),
                 array('back_link' => true)
             );
         }
@@ -112,8 +112,8 @@ class Simple_Dashboard_Plugin
         if (version_compare(PHP_VERSION, '7.4', '<')) {
             deactivate_plugins(plugin_basename(__FILE__));
             wp_die(
-                esc_html__('This plugin requires PHP 7.4 or higher.', 'simple-dashboard-login-customizer'),
-                esc_html__('Plugin Activation Error', 'simple-dashboard-login-customizer'),
+                esc_html__('This plugin requires PHP 7.4 or higher.', 'rahulapalu-dashboard-login-customizer'),
+                esc_html__('Plugin Activation Error', 'rahulapalu-dashboard-login-customizer'),
                 array('back_link' => true)
             );
         }
@@ -125,15 +125,15 @@ class Simple_Dashboard_Plugin
             'website_url' => get_site_url(),
             'enable_support_link' => false,
             'support_link_url' => '',
-            'support_link_text' => __('Support', 'simple-dashboard-login-customizer'),
+            'support_link_text' => __('Support', 'rahulapalu-dashboard-login-customizer'),
             'copyright_text' => '',
             'primary_color' => '#c60b30',
             'secondary_color' => '#00a478'
         );
 
         // Only add defaults if options don't exist
-        if (false === get_option('simple_dashboard_option')) {
-            add_option('simple_dashboard_option', $default_options);
+        if (false === get_option('rahulapalu_dashboard_option')) {
+            add_option('rahulapalu_dashboard_option', $default_options);
         }
 
         // Set plugin version
@@ -167,7 +167,7 @@ class Simple_Dashboard_Plugin
         $settings_link = sprintf(
             '<a href="%s">%s</a>',
             esc_url(admin_url('admin.php?page=custom-dashboard-settings')),
-            esc_html__('Settings', 'simple-dashboard-login-customizer')
+            esc_html__('Settings', 'rahulapalu-dashboard-login-customizer')
         );
 
         array_unshift($links, $settings_link);

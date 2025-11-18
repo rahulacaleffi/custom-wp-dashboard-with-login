@@ -1,4 +1,4 @@
-# Simple Dashboard & Login Customizer by RahulaPalu
+# RahulaPalu Dashboard & Login Customizer
 
 A WordPress plugin that allows you to customize your WordPress dashboard and login page with your own branding, logo, and styling.
 
@@ -14,7 +14,7 @@ A WordPress plugin that allows you to customize your WordPress dashboard and log
 
 ## Installation
 
-1. Upload the plugin files to the `/wp-content/plugins/simple-dashboard-login-customizer` directory, or install through WordPress
+1. Upload the plugin files to the `/wp-content/plugins/rahulapalu-dashboard-login-customizer` directory, or install through WordPress
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Navigate to Dashboard Settings to configure the plugin
 4. Add your custom logos, URLs, and branding information
@@ -49,4 +49,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-For issues, questions, or suggestions, please use the [GitHub issue tracker](https://github.com/rahulacaleffi/simple-dashboard-login-customizer-by-rahulapalu/issues).
+For issues, questions, or suggestions, please use the [GitHub issue tracker](https://github.com/rahulacaleffi/rahulapalu-dashboard-login-customizer/issues).

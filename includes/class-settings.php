@@ -144,8 +144,8 @@ class Simple_Dashboard_Settings
     public function add_settings_page()
     {
         add_menu_page(
-            __('Custom WP Dashboard - Settings', 'simple-dashboard-login-customizer'),
-            __('WP Dashboard', 'simple-dashboard-login-customizer'),
+            __('Custom WP Dashboard - Settings', 'rahulapalu-dashboard-login-customizer'),
+            __('WP Dashboard', 'rahulapalu-dashboard-login-customizer'),
             'manage_options',
             'custom-dashboard-settings',
             array($this, 'render_settings_page'),
@@ -165,12 +165,12 @@ class Simple_Dashboard_Settings
     public function register_settings()
     {
         // Register settings group
-        register_setting('custom_dashboard_settings', 'simple_dashboard_option', array($this, 'sanitize_options'));
+        register_setting('custom_dashboard_settings', 'rahulapalu_dashboard_option', array($this, 'sanitize_options'));
 
         // General Settings Section
         add_settings_section(
             'custom_dashboard_general',
-            __('General Settings', 'simple-dashboard-login-customizer'),
+            __('General Settings', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'general_section_callback'),
             'custom-dashboard-settings'
         );
@@ -178,7 +178,7 @@ class Simple_Dashboard_Settings
         // Logo URL
         add_settings_field(
             'logo_url',
-            __('Dashboard Logo URL', 'simple-dashboard-login-customizer'),
+            __('Dashboard Logo URL', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'logo_url_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_general'
@@ -187,7 +187,7 @@ class Simple_Dashboard_Settings
         // Login Logo URL
         add_settings_field(
             'login_logo_url',
-            __('Login Logo URL', 'simple-dashboard-login-customizer'),
+            __('Login Logo URL', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'login_logo_url_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_general'
@@ -196,7 +196,7 @@ class Simple_Dashboard_Settings
         // Login Background Image
         add_settings_field(
             'login_background_url',
-            __('Login Background Image', 'simple-dashboard-login-customizer'),
+            __('Login Background Image', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'login_background_url_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_general'
@@ -205,7 +205,7 @@ class Simple_Dashboard_Settings
         // Website URL
         add_settings_field(
             'website_url',
-            __('Website URL', 'simple-dashboard-login-customizer'),
+            __('Website URL', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'website_url_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_general'
@@ -214,7 +214,7 @@ class Simple_Dashboard_Settings
         // Colors Section
         add_settings_section(
             'custom_dashboard_colors',
-            __('Color Settings', 'simple-dashboard-login-customizer'),
+            __('Color Settings', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'colors_section_callback'),
             'custom-dashboard-settings'
         );
@@ -222,7 +222,7 @@ class Simple_Dashboard_Settings
         // Primary Color
         add_settings_field(
             'primary_color',
-            __('Primary Color', 'simple-dashboard-login-customizer'),
+            __('Primary Color', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'primary_color_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_colors'
@@ -231,7 +231,7 @@ class Simple_Dashboard_Settings
         // Secondary Color
         add_settings_field(
             'secondary_color',
-            __('Secondary Color', 'simple-dashboard-login-customizer'),
+            __('Secondary Color', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'secondary_color_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_colors'
@@ -240,7 +240,7 @@ class Simple_Dashboard_Settings
         // Support Link Section
         add_settings_section(
             'custom_dashboard_support',
-            __('Support Settings', 'simple-dashboard-login-customizer'),
+            __('Support Settings', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'support_section_callback'),
             'custom-dashboard-settings'
         );
@@ -248,7 +248,7 @@ class Simple_Dashboard_Settings
         // Enable Support Link
         add_settings_field(
             'enable_support_link',
-            __('Enable Support Link', 'simple-dashboard-login-customizer'),
+            __('Enable Support Link', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'enable_support_link_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_support'
@@ -257,7 +257,7 @@ class Simple_Dashboard_Settings
         // Support Link URL
         add_settings_field(
             'support_link_url',
-            __('Support Link URL', 'simple-dashboard-login-customizer'),
+            __('Support Link URL', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'support_link_url_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_support'
@@ -266,7 +266,7 @@ class Simple_Dashboard_Settings
         // Support Link Text
         add_settings_field(
             'support_link_text',
-            __('Support Link Text', 'simple-dashboard-login-customizer'),
+            __('Support Link Text', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'support_link_text_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_support'
@@ -275,7 +275,7 @@ class Simple_Dashboard_Settings
         // Copyright Section
         add_settings_section(
             'custom_dashboard_copyright',
-            __('Copyright Settings', 'simple-dashboard-login-customizer'),
+            __('Copyright Settings', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'copyright_section_callback'),
             'custom-dashboard-settings'
         );
@@ -283,7 +283,7 @@ class Simple_Dashboard_Settings
         // Copyright Text
         add_settings_field(
             'copyright_text',
-            __('Copyright Text', 'simple-dashboard-login-customizer'),
+            __('Copyright Text', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'copyright_text_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_copyright'
@@ -292,7 +292,7 @@ class Simple_Dashboard_Settings
         // Debug mode
         add_settings_field(
             'enable_debug_mode',
-            __('Enable Debug Mode', 'simple-dashboard-login-customizer'),
+            __('Enable Debug Mode', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'enable_debug_mode_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_general'
@@ -301,7 +301,7 @@ class Simple_Dashboard_Settings
         // Disable gutenberg
         add_settings_field(
             'disable_gutenberg',
-            __('Disable Gutenberg Editor', 'simple-dashboard-login-customizer'),
+            __('Disable Gutenberg Editor', 'rahulapalu-dashboard-login-customizer'),
             array($this, 'disable_gutenberg_callback'),
             'custom-dashboard-settings',
             'custom_dashboard_general'
@@ -382,45 +382,45 @@ class Simple_Dashboard_Settings
     public function general_section_callback()
     {
         echo '<p class="section-description">' .
-            esc_html__('Configure the general appearance settings of your dashboard, including logos and website URL. These settings affect both the admin dashboard and login page.', 'simple-dashboard-login-customizer') .
+            esc_html__('Configure the general appearance settings of your dashboard, including logos and website URL. These settings affect both the admin dashboard and login page.', 'rahulapalu-dashboard-login-customizer') .
             '</p>';
     }
 
     public function support_section_callback()
     {
         echo '<p class="section-description">' .
-            esc_html__('Add a support link to your admin bar for quick access to help resources. Enable this if you want to provide easy access to support for your users.', 'simple-dashboard-login-customizer') .
+            esc_html__('Add a support link to your admin bar for quick access to help resources. Enable this if you want to provide easy access to support for your users.', 'rahulapalu-dashboard-login-customizer') .
             '</p>';
     }
 
     public function copyright_section_callback()
     {
         echo '<p class="section-description">' .
-            esc_html__('Set your copyright text that appears in the dashboard footer. Use {year} as a placeholder to automatically display the current year.', 'simple-dashboard-login-customizer') .
+            esc_html__('Set your copyright text that appears in the dashboard footer. Use {year} as a placeholder to automatically display the current year.', 'rahulapalu-dashboard-login-customizer') .
             '</p>';
     }
 
     public function colors_section_callback()
     {
         echo '<p class="section-description">' .
-            esc_html__('Customize the color scheme of your dashboard and login page. The primary color is used for main elements and backgrounds, while the secondary color is used for accents and highlights.', 'simple-dashboard-login-customizer') .
+            esc_html__('Customize the color scheme of your dashboard and login page. The primary color is used for main elements and backgrounds, while the secondary color is used for accents and highlights.', 'rahulapalu-dashboard-login-customizer') .
             '</p>';
     }
 
     public function primary_color_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['primary_color']) ? $options['primary_color'] : '#c60b30';
-        echo '<input type="text" name="simple_dashboard_option[primary_color]" value="' . esc_attr($value) . '" class="custom-dashboard-color-picker" />';
-        echo '<p class="description">' . esc_html__('Primary color used throughout the dashboard and login page. Consider text as "white" and the selected color as background (menus, texts and the login page)', 'simple-dashboard-login-customizer') . '</p>';
+        echo '<input type="text" name="rahulapalu_dashboard_option[primary_color]" value="' . esc_attr($value) . '" class="custom-dashboard-color-picker" />';
+        echo '<p class="description">' . esc_html__('Primary color used throughout the dashboard and login page. Consider text as "white" and the selected color as background (menus, texts and the login page)', 'rahulapalu-dashboard-login-customizer') . '</p>';
     }
 
     public function secondary_color_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['secondary_color']) ? $options['secondary_color'] : '#00a478';
-        echo '<input type="text" name="simple_dashboard_option[secondary_color]" value="' . esc_attr($value) . '" class="custom-dashboard-color-picker" />';
-        echo '<p class="description">' . esc_html__('Secondary color used throughout the dashboard.', 'simple-dashboard-login-customizer') . '</p>';
+        echo '<input type="text" name="rahulapalu_dashboard_option[secondary_color]" value="' . esc_attr($value) . '" class="custom-dashboard-color-picker" />';
+        echo '<p class="description">' . esc_html__('Secondary color used throughout the dashboard.', 'rahulapalu-dashboard-login-customizer') . '</p>';
     }
 
     /**
@@ -432,145 +432,145 @@ class Simple_Dashboard_Settings
      */
     public function logo_url_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['logo_url']) ? $options['logo_url'] : '';
 ?>
         <div class="custom-dashboard-logo-upload">
             <input type="url"
                 id="logo_url"
-                name="simple_dashboard_option[logo_url]"
+                name="rahulapalu_dashboard_option[logo_url]"
                 value="<?php echo esc_attr($value); ?>"
                 class="regular-text custom-dashboard-logo-url" />
             <button type="button"
                 class="button custom-dashboard-upload-image"
                 data-target="logo_url">
-                <?php esc_html_e('Upload/Select Image', 'simple-dashboard-login-customizer'); ?>
+                <?php esc_html_e('Upload/Select Image', 'rahulapalu-dashboard-login-customizer'); ?>
             </button>
             <?php if ($value): ?>
                 <div class="custom-dashboard-image-preview">
-                    <img src="<?php echo esc_url($value); ?>" alt="<?php esc_attr_e('Dashboard Logo Preview', 'simple-dashboard-login-customizer'); ?>" />
+                    <img src="<?php echo esc_url($value); ?>" alt="<?php esc_attr_e('Dashboard Logo Preview', 'rahulapalu-dashboard-login-customizer'); ?>" />
                     <a href="#" class="custom-dashboard-remove-image" data-target="logo_url">
-                        <?php esc_html_e('Remove image', 'simple-dashboard-login-customizer'); ?>
+                        <?php esc_html_e('Remove image', 'rahulapalu-dashboard-login-customizer'); ?>
                     </a>
                 </div>
             <?php endif; ?>
-            <p class="description"><?php esc_html_e('Upload or enter the URL to the logo image for the dashboard.', 'simple-dashboard-login-customizer'); ?></p>
+            <p class="description"><?php esc_html_e('Upload or enter the URL to the logo image for the dashboard.', 'rahulapalu-dashboard-login-customizer'); ?></p>
         </div>
     <?php
     }
 
     public function login_logo_url_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['login_logo_url']) ? $options['login_logo_url'] : '';
     ?>
         <div class="custom-dashboard-logo-upload">
             <input type="url"
                 id="login_logo_url"
-                name="simple_dashboard_option[login_logo_url]"
+                name="rahulapalu_dashboard_option[login_logo_url]"
                 value="<?php echo esc_attr($value); ?>"
                 class="regular-text custom-dashboard-logo-url" />
             <button type="button"
                 class="button custom-dashboard-upload-image"
                 data-target="login_logo_url">
-                <?php esc_html_e('Upload/Select Image', 'simple-dashboard-login-customizer'); ?>
+                <?php esc_html_e('Upload/Select Image', 'rahulapalu-dashboard-login-customizer'); ?>
             </button>
             <?php if ($value): ?>
                 <div class="custom-dashboard-image-preview">
-                    <img src="<?php echo esc_url($value); ?>" alt="<?php esc_attr_e('Login Logo Preview', 'simple-dashboard-login-customizer'); ?>" />
+                    <img src="<?php echo esc_url($value); ?>" alt="<?php esc_attr_e('Login Logo Preview', 'rahulapalu-dashboard-login-customizer'); ?>" />
                     <a href="#" class="custom-dashboard-remove-image" data-target="login_logo_url">
-                        <?php esc_html_e('Remove image', 'simple-dashboard-login-customizer'); ?>
+                        <?php esc_html_e('Remove image', 'rahulapalu-dashboard-login-customizer'); ?>
                     </a>
                 </div>
             <?php endif; ?>
-            <p class="description"><?php esc_html_e('Upload or enter the URL to the logo image for the login page.', 'simple-dashboard-login-customizer'); ?></p>
+            <p class="description"><?php esc_html_e('Upload or enter the URL to the logo image for the login page.', 'rahulapalu-dashboard-login-customizer'); ?></p>
         </div>
     <?php
     }
 
     public function website_url_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['website_url']) ? $options['website_url'] : get_site_url();
-        echo '<input type="url" name="simple_dashboard_option[website_url]" value="' . esc_attr($value) . '" class="regular-text" />';
-        echo '<p class="description">' . esc_html__('URL to your website. Defaults to site URL.', 'simple-dashboard-login-customizer') . '</p>';
+        echo '<input type="url" name="rahulapalu_dashboard_option[website_url]" value="' . esc_attr($value) . '" class="regular-text" />';
+        echo '<p class="description">' . esc_html__('URL to your website. Defaults to site URL.', 'rahulapalu-dashboard-login-customizer') . '</p>';
     }
 
     public function login_background_url_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['login_background_url']) ? $options['login_background_url'] : '';
     ?>
         <div class="custom-dashboard-logo-upload">
             <input type="url"
                 id="login_background_url"
-                name="simple_dashboard_option[login_background_url]"
+                name="rahulapalu_dashboard_option[login_background_url]"
                 value="<?php echo esc_attr($value); ?>"
                 class="regular-text custom-dashboard-logo-url" />
             <button type="button"
                 class="button custom-dashboard-upload-image"
                 data-target="login_background_url">
-                <?php esc_html_e('Upload/Select Image', 'simple-dashboard-login-customizer'); ?>
+                <?php esc_html_e('Upload/Select Image', 'rahulapalu-dashboard-login-customizer'); ?>
             </button>
             <?php if ($value): ?>
                 <div class="custom-dashboard-image-preview">
-                    <img src="<?php echo esc_url($value); ?>" alt="<?php esc_attr_e('Login Background Preview', 'simple-dashboard-login-customizer'); ?>" />
+                    <img src="<?php echo esc_url($value); ?>" alt="<?php esc_attr_e('Login Background Preview', 'rahulapalu-dashboard-login-customizer'); ?>" />
                     <a href="#" class="custom-dashboard-remove-image" data-target="login_background_url">
-                        <?php esc_html_e('Remove image', 'simple-dashboard-login-customizer'); ?>
+                        <?php esc_html_e('Remove image', 'rahulapalu-dashboard-login-customizer'); ?>
                     </a>
                 </div>
             <?php endif; ?>
-            <p class="description"><?php esc_html_e('Upload or enter the URL to the background image for the login page.', 'simple-dashboard-login-customizer'); ?></p>
+            <p class="description"><?php esc_html_e('Upload or enter the URL to the background image for the login page.', 'rahulapalu-dashboard-login-customizer'); ?></p>
         </div>
     <?php
     }
 
     public function enable_support_link_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['enable_support_link']) ? $options['enable_support_link'] : false;
-        echo '<label><input type="checkbox" name="simple_dashboard_option[enable_support_link]" value="1" ' . checked(1, $value, false) . ' />';
-        echo ' ' . esc_html__('Show support link in admin bar', 'simple-dashboard-login-customizer') . '</label>';
+        echo '<label><input type="checkbox" name="rahulapalu_dashboard_option[enable_support_link]" value="1" ' . checked(1, $value, false) . ' />';
+        echo ' ' . esc_html__('Show support link in admin bar', 'rahulapalu-dashboard-login-customizer') . '</label>';
     }
 
     public function support_link_url_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['support_link_url']) ? $options['support_link_url'] : '';
-        echo '<input type="url" name="simple_dashboard_option[support_link_url]" value="' . esc_attr($value) . '" class="regular-text" />';
-        echo '<p class="description">' . esc_html__('URL for the support link (e.g., your support page or contact form).', 'simple-dashboard-login-customizer') . '</p>';
+        echo '<input type="url" name="rahulapalu_dashboard_option[support_link_url]" value="' . esc_attr($value) . '" class="regular-text" />';
+        echo '<p class="description">' . esc_html__('URL for the support link (e.g., your support page or contact form).', 'rahulapalu-dashboard-login-customizer') . '</p>';
     }
 
     public function support_link_text_callback()
     {
-        $options = get_option('simple_dashboard_option');
-        $value = isset($options['support_link_text']) ? $options['support_link_text'] : __('Support', 'simple-dashboard-login-customizer');
-        echo '<input type="text" name="simple_dashboard_option[support_link_text]" value="' . esc_attr($value) . '" class="regular-text" />';
-        echo '<p class="description">' . esc_html__('Text to display for the support link.', 'simple-dashboard-login-customizer') . '</p>';
+        $options = get_option('rahulapalu_dashboard_option');
+        $value = isset($options['support_link_text']) ? $options['support_link_text'] : __('Support', 'rahulapalu-dashboard-login-customizer');
+        echo '<input type="text" name="rahulapalu_dashboard_option[support_link_text]" value="' . esc_attr($value) . '" class="regular-text" />';
+        echo '<p class="description">' . esc_html__('Text to display for the support link.', 'rahulapalu-dashboard-login-customizer') . '</p>';
     }
 
     public function copyright_text_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['copyright_text']) ? $options['copyright_text'] : '';
-        echo '<input type="text" name="simple_dashboard_option[copyright_text]" value="' . esc_attr($value) . '" class="regular-text" />';
-        echo '<p class="description">' . esc_html__('Copyright text to display in footer. Use {year} as placeholder for current year.', 'simple-dashboard-login-customizer') . '</p>';
+        echo '<input type="text" name="rahulapalu_dashboard_option[copyright_text]" value="' . esc_attr($value) . '" class="regular-text" />';
+        echo '<p class="description">' . esc_html__('Copyright text to display in footer. Use {year} as placeholder for current year.', 'rahulapalu-dashboard-login-customizer') . '</p>';
     }
 
     public function enable_debug_mode_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['enable_debug_mode']) ? $options['enable_debug_mode'] : false;
-        echo '<label><input type="checkbox" name="simple_dashboard_option[enable_debug_mode]" value="1" ' . checked(1, $value, false) . ' />';
-        echo ' ' . esc_html__('Enable debug mode for troubleshooting.', 'simple-dashboard-login-customizer') . '<br/><i>Enable/disable caching css</i></label>';
+        echo '<label><input type="checkbox" name="rahulapalu_dashboard_option[enable_debug_mode]" value="1" ' . checked(1, $value, false) . ' />';
+        echo ' ' . esc_html__('Enable debug mode for troubleshooting.', 'rahulapalu-dashboard-login-customizer') . '<br/><i>Enable/disable caching css</i></label>';
     }
 
     public function disable_gutenberg_callback()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $value = isset($options['disable_gutenberg']) ? $options['disable_gutenberg'] : false;
-        echo '<label><input type="checkbox" name="simple_dashboard_option[disable_gutenberg]" value="1" ' . checked(1, $value, false) . ' />';
-        echo ' ' . esc_html__('Disable the Gutenberg block editor and use the classic editor instead.', 'simple-dashboard-login-customizer') . '</label>';
+        echo '<label><input type="checkbox" name="rahulapalu_dashboard_option[disable_gutenberg]" value="1" ' . checked(1, $value, false) . ' />';
+        echo ' ' . esc_html__('Disable the Gutenberg block editor and use the classic editor instead.', 'rahulapalu-dashboard-login-customizer') . '</label>';
     }
 
     /**
@@ -585,7 +585,7 @@ class Simple_Dashboard_Settings
     {
         if (!current_user_can('manage_options')) {
             wp_die(
-                esc_html__('Sorry, you do not have sufficient permissions to access this page.', 'simple-dashboard-login-customizer')
+                esc_html__('Sorry, you do not have sufficient permissions to access this page.', 'rahulapalu-dashboard-login-customizer')
             );
         }
 
@@ -596,7 +596,7 @@ class Simple_Dashboard_Settings
             !check_admin_referer('custom_dashboard_settings-options')
         ) {
             wp_die(
-                esc_html__('Invalid nonce verification', 'simple-dashboard-login-customizer')
+                esc_html__('Invalid nonce verification', 'rahulapalu-dashboard-login-customizer')
             );
         }
 
@@ -620,7 +620,7 @@ class Simple_Dashboard_Settings
                 <?php
                 settings_fields('custom_dashboard_settings');
                 do_settings_sections('custom-dashboard-settings');
-                submit_button(__('Save Settings', 'simple-dashboard-login-customizer'));
+                submit_button(__('Save Settings', 'rahulapalu-dashboard-login-customizer'));
                 ?>
             </form>
         </div>
@@ -644,7 +644,7 @@ class Simple_Dashboard_Settings
      */
     public function is_debug_mode_enabled()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         return isset($options['enable_debug_mode']) && $options['enable_debug_mode'];
     }
 
@@ -666,7 +666,7 @@ class Simple_Dashboard_Settings
      */
     public function check_and_disabled_gutenberg_editor()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         if (isset($options['disable_gutenberg']) && $options['disable_gutenberg']) {
             add_filter('use_block_editor_for_post', '__return_false', 10);
             add_filter('use_block_editor_for_post_type', '__return_false', 10);

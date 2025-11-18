@@ -54,7 +54,7 @@ class Simple_Dashboard_Login
      */
     public function custom_login_enqueue_styles()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $primary_color = isset($options['primary_color']) ? $options['primary_color'] : '#cea176';
         $secondary_color = isset($options['secondary_color']) ? $options['secondary_color'] : '#00a478';
         $background_url = !empty($options['login_background_url']) ? $options['login_background_url'] : plugin_dir_url(__FILE__) . '../assets/images/worldmap.svg';
@@ -125,7 +125,7 @@ class Simple_Dashboard_Login
      */
     public function change_login_url()
     {
-        $options = get_option('simple_dashboard_option');
+        $options = get_option('rahulapalu_dashboard_option');
         $website_url = !empty($options['website_url']) ? $options['website_url'] : get_site_url();
         $login_logo_url = !empty($options['login_logo_url']) ? $options['login_logo_url'] : '';
 

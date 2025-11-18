@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Uninstall Simple Dashboard & Login Customizer by RahulaPalu Plugin
+ * Uninstall RahulaPalu Dashboard & Login Customizer Plugin
  *
  * This file is called when the plugin is uninstalled via the WordPress admin.
  *
@@ -19,11 +19,11 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
  * Remove all plugin settings from the database when uninstalled.
  * This ensures a clean removal of the plugin.
  */
-delete_option('simple_dashboard_option');
+delete_option('rahulapalu_dashboard_option');
 delete_option('simple_dashboard_version');
 
 // For multisite installations
-delete_site_option('simple_dashboard_option');
+delete_site_option('rahulapalu_dashboard_option');
 delete_site_option('simple_dashboard_version');
 
 // Clear any cached data
